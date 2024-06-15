@@ -5,10 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+     
+    <title>Projekt</title>
+    <!--TailWind-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <!--CSS-->
+    <link rel="stylesheet" href="../css/vsechny.css">
+    <link rel="stylesheet" href="../css/contact.css">
     <!--Icons-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <!--CSS-->
-    <link rel="stylesheet" href="../css/contact.css">
     <!--Script pro email-->
     <script src="https://web3forms.com/client/script.js" async defer></script>
     <title>Kontakt</title>
@@ -23,7 +29,7 @@
                 <div class="container rounded-3" style="background-color: rgb(205, 232, 229);">
                     <!--Logo-->
                     <a class="navbar-brand fs-4 logo" href="./index.html">
-                        <img src="/imgs/logo_patrman_zmodro-zelene.jpg" class="d-inline-block align-text-top" width="30" alt="Logo">
+                        <img src="../imgs/logo_patrman_zmodro-zelene.jpg" class="d-inline-block align-text-top" width="30" alt="Logo">
                         Trampolíny Harcov
                     </a>
                     <!--Toogle btn-->
@@ -65,57 +71,60 @@
     
 
     <main>
-        <div class="container my-5">
-            <div class="row d-flex justify-content-between pb-5 mb-5 pt-4 pt-4">
-                <div class="col-md-7 me-5 mb-5">
-                    <form action="https://api.web3forms.com/submit" method="POST">
-                        <input type="hidden" name="subject" value="Nová zpráva ze stránek">
-                        <input type="hidden" name="access_key" value="017e6bfa-bd24-48ec-8cee-0df0ab3915fa">
-                        <div class="mb-3">
-                            <label for="exampleFormControlInput1" id="jmeno" class="form-label">Jméno a Příjmení</label>
-                            <input type="text" name="name" class="form-control" id="exampleFormControlInput1" placeholder="Vaše jméno a příjmení" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="exampleFormControlInput2" id="email" class="form-label">Email</label>
-                            <input type="email" name="email"  class="form-control" id="exampleFormControlInput2" placeholder="Váš email" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="exampleFormControlInput3" id="telefoniCislo" class="form-label">Telefoní číslo</label>
-                            <input type="number" class="form-control" id="exampleFormControlInput3" placeholder="Vaše telefoní číslo" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="exampleFormControlTextarea4" id="message" class="form-label">Zpráva</label>
-                            <textarea class="form-control" name="message" id="exampleFormControlTextarea4" rows="3" placeholder="" required></textarea>
-                        </div>
-                        <div class="h-captcha" data-captcha="true"></div>
-                        <button type="submit" class="btn" style="background-color: rgb(205, 232, 229)" >Odeslat</button>
-                    </form>
-                    
-                </div>
-                <div class="col-lg-4 py-3 rounded-3" style="background-color: rgb(205, 232, 229)">
-                    <h4>Kontaktuj nás</h4>
-                    <div class="mt-4">
-                        <div class="d-flex">
-                            <i class="bi bi-geo-alt me-3"></i>
-                            <p>Adresa</p>
-                        </div> <hr>
-                        <div class="d-flex">
-                            <i class="bi bi-telephone me-3"></i>
-                            <p>+420 876 879 985</p>
-                        </div> <hr>
-                        <div class="d-flex">
-                            <i class="bi bi-envelope me-3"></i>
-                            <p>kpatrmanova@gmail.com</p>
-                        </div> <hr>
-                        <div class="d-flex">
-                            <i class="bi bi-browser-chrome me-3"></i>
-                            <p>www.trampoliny.cz</p>
-                        </div> <hr>
+        <section>
+            <div class="container my-5">
+                <div class="row d-flex justify-content-between pb-5 mb-5 pt-4 pt-4">
+                    <div class="col-md-7 me-5 mb-5">
+                        <form action="https://api.web3forms.com/submit" method="POST">
+                            <input type="hidden" name="subject" value="Nová zpráva ze stránek">
+                            <input type="hidden" name="access_key" value="017e6bfa-bd24-48ec-8cee-0df0ab3915fa">
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" id="jmeno" class="form-label">Jméno a Příjmení</label>
+                                <input type="text" name="name" class="form-control" id="exampleFormControlInput1" placeholder="Vaše jméno a příjmení" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput2" id="email" class="form-label">Email</label>
+                                <input type="email" name="email"  class="form-control" id="exampleFormControlInput2" placeholder="Váš email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput3" id="telefoniCislo" class="form-label">Telefoní číslo</label>
+                                <input type="number" class="form-control" id="exampleFormControlInput3" placeholder="Vaše telefoní číslo" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea4" id="message" class="form-label">Zpráva</label>
+                                <textarea class="form-control" name="message" id="exampleFormControlTextarea4" rows="3" placeholder="" required></textarea>
+                            </div>
+                            <div class="h-captcha" data-captcha="true"></div>
+                            <button type="submit" class="btn" style="background-color: rgb(205, 232, 229)" >Odeslat</button>
+                        </form>
+                        
                     </div>
-                    
+                    <div class="col-lg-4 py-3 rounded-3 m-4" style="background-color: rgb(205, 232, 229)">
+                        <h4>Kontaktuj nás</h4>
+                        <div class="mt-4">
+                            <div class="d-flex">
+                                <i class="bi bi-geo-alt me-3"></i>
+                                <p>Adresa</p>
+                            </div> <hr>
+                            <div class="d-flex my-2 align-items-center">
+                                <i class="bi bi-telephone me-3"></i>
+                                <p>+420 876 879 985</p>
+                            </div> <hr>
+                            <div class="d-flex my-2 align-items-center">
+                                <i class="bi bi-envelope me-3"></i>
+                                <p>kpatrmanova@gmail.com</p>
+                            </div> <hr>
+                            <div class="d-flex my-2 align-items-center">
+                                <i class="bi bi-browser-chrome me-3"></i>
+                                <p>www.trampoliny.cz</p>
+                            </div> <hr>
+                        </div>
+                        
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
+        
 
     </main>
     <footer class="py-3 mt-4 px-5 border-top bg-light ">
