@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Freeman&display=swap');
 body{
-    background: url(/imgs/BG.jpg);
+    background: url(../imgs/BG.jpg);
     background-blend-mode: multiply;
     background-size: cover;
     background-repeat: no-repeat;
